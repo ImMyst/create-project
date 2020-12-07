@@ -1,0 +1,24 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently -k -n \"Typescript,Server\" -p \"[{name}]\" -c \"blue,green\" \"tsc -w\" \"nodemon dist/index.js\""
+  },
+  "keywords": [],
+  "author": "ImMyst / Titouan .G",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.10",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6",
+    "typescript": "^4.1.2"
+  }
+}
